@@ -44,7 +44,23 @@ function getHumanChoice() {
 
 
 function playRound(humanChoice, computerChoice) {
-    
+    if (humanchoice == scissors && computerChoice == paper) {
+        console.log("Scissors beats paper, human wins!")
+        
+
+    } else if () {
+
+    } else if () {
+        
+    } else if () {
+        
+    } else if () {
+        
+    } else if () {
+        
+    } else {
+        
+    }
 
 }
 

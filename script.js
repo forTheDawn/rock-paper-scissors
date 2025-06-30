@@ -4,11 +4,21 @@ const humanScore = 0;
 const computerScore = 0;
 
 function getComputerChoice() {
-    return Math.floor(Math.random() * 3);
-    
+    let comp = Math.floor(Math.random() * 3);   
 
+    if (comp = 0) {
+        let computer = scissors;
+
+    } else if (comp = 1) {
+        let computer = rock;
+
+    } else if (comp = 2) {
+        let computer = paper;
+    }
+    return comp;
 
 }
+
 
 function getHumanChoice() {
     let answer = prompt("Enter your answer here: ");
@@ -34,6 +44,7 @@ function getHumanChoice() {
 
 
 function playRound(humanChoice, computerChoice) {
+    
 
 }
 

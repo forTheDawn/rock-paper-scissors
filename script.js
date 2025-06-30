@@ -12,17 +12,24 @@ function getHumanChoice() {
     let answer = prompt("Enter your answer here: ");
 
     if (answer.toLowerCase() == "scissors") {
-        const humanAnswer = 
+        let answer = scissors;
 
     } else if (answer.toLowerCase() == "rock") {
+        let answer = rock;
 
     } else if (answer.toLowerCase() == "paper") {
+        let answer = paper;
 
     } else {
+        let answer = null;
 
     }
 
+    return answer;
+
 }
+
+
 
 function playRound(humanChoice, computerChoice) {
 

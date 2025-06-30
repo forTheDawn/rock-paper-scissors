@@ -4,6 +4,8 @@ const humanScore = 0;
 const computerScore = 0;
 
 function getComputerChoice() {
+    return Math.floor(Math.random() * 3);
+    
 
 
 }

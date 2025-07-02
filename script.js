@@ -4,18 +4,17 @@ const humanScore = 0;
 const computerScore = 0;
 
 function getComputerChoice() {
-    computerChoice = Math.floor(Math.random() * 3);   
+    comp = Math.floor(Math.random() * 3);   
 
-    if (computerChoice === 0) {
-        computerChoice = scissors;
+    if (comp === 0) {
+        return "scissors";
 
     } else if (comp === 1) {
-        computerChoice = rock;
+        return "rock";
 
     } else if (comp === 2) {
-        computerChoice = paper;
+        return "paper";
     }
-    return computerChoice;
 
 }
 
@@ -24,19 +23,16 @@ function getHumanChoice() {
     humanChoice = prompt("Enter your answer here: ");
 
     if (humanChoice.toLowerCase() === "scissors") {
-        humanChoice = scissors;
-        console.log("You picked scissors!")
+        return "scissors";
 
     } else if (humanChoice.toLowerCase() === "rock") {
-        humanChoice = rock;
-        console.log("You picked rock!")
+        return "rock";
 
     } else if (humanChoice.toLowerCase() === "paper") {
-        humanChoice = paper;
-        console.log("You picked paper!")
+        return "paper";
 
     } 
-    return humanChoice;
+
 
 }
 

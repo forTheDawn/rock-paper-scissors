@@ -60,7 +60,7 @@ let computerSelection = getComputerChoice();
 }
 
         function playGame() {
-            for (let i = 1; i = 5; i++) {
+            for (let i = 1; i <= 5; i++) {
                 let humanChoice = getHumanChoice();
                 let computerChoice = getComputerChoice();
                 playRound(humanChoice, computerChoice);

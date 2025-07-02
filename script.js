@@ -49,30 +49,34 @@ let computerSelection = getComputerChoice();
         else if ((humanChoice == "scissors" && computerChoice == "paper") || 
                     (humanChoice == "paper" && computerChoice == "rock") || 
                         (humanChoice == "rock" && computerChoice == "scissors")) {
+         humanScore++;
         console.log(`Human win, Comp:${computerScore}  Human:${humanScore}`);
-        humanScore++;
+        
 
         } 
 
          else {
-        console.log(`Computer win, Comp:${computerScore}  Human:${humanScore}`);
         computerScore++;
+        console.log(`Computer win, Comp:${computerScore}  Human:${humanScore}`);
+        
 
         }
 
 }
 
         function playGame() {
-            for (let i = 1, 1 = 5, i++) {
+            for (let i = 1; i = 5; i++) {
                 let humanChoice = getHumanChoice();
                 let computerChoice = getComputerChoice();
-                
+                console.log(``);
 
                 playRound(humanChoice, computerChoice);
             }
+            console.log(`Total points, Comp:${computerScore} Huma:${humanScore}`);
+
         }
 
 
-
+playGame();
 
 

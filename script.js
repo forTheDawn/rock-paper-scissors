@@ -1,7 +1,6 @@
 
 
-let humanScore = 0;
-let computerScore = 0;
+
 
 function getComputerChoice() {
     comp = Math.floor(Math.random() * 3);   
@@ -69,6 +68,9 @@ let computerSelection = getComputerChoice();
             console.log(`Total points, Comp:${computerScore} Huma:${humanScore}`);
 
         }
+
+let humanScore = 0;
+let computerScore = 0;
 
 
 playGame();

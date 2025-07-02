@@ -1,7 +1,7 @@
 
 
-const humanScore = 0;
-const computerScore = 0;
+let humanScore = 0;
+let computerScore = 0;
 
 function getComputerChoice() {
     comp = Math.floor(Math.random() * 3);   
@@ -49,18 +49,14 @@ let computerSelection = getComputerChoice();
         else if ((humanChoice == "scissors" && computerChoice == "paper") || 
                     (humanChoice == "paper" && computerChoice == "rock") || 
                         (humanChoice == "rock" && computerChoice == "scissors")) {
-         humanScore++;
+        humanScore++;
         console.log(`Human win, Comp:${computerScore}  Human:${humanScore}`);
-        
-
         } 
 
-         else {
-        computerScore++;
-        console.log(`Computer win, Comp:${computerScore}  Human:${humanScore}`);
-        
-
-        }
+        else {
+            computerScore++;
+            console.log(`Computer win, Comp:${computerScore}  Human:${humanScore}`);
+         }
 
 }
 
@@ -68,8 +64,6 @@ let computerSelection = getComputerChoice();
             for (let i = 1; i = 5; i++) {
                 let humanChoice = getHumanChoice();
                 let computerChoice = getComputerChoice();
-                console.log(``);
-
                 playRound(humanChoice, computerChoice);
             }
             console.log(`Total points, Comp:${computerScore} Huma:${humanScore}`);

@@ -67,6 +67,21 @@ let computerSelection = getComputerChoice();
             }
             console.log(`Total points, Comp:${computerScore} Huma:${humanScore}`);
 
+            if (humanScore < computerScore) {
+                console.log("Computer Wins!!");
+
+            }
+
+            else if (humanScore > computerScore){
+                console.log("Human Wins!!");
+
+            }
+
+            else {
+                console.log("Tie!!");
+
+            }
+
         }
 
 let humanScore = 0;
